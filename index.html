@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Skolekantina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<a class="skip-link" href="#main">Hopp til hovedinnhold</a>
+
+<header class="header">
+    <div class="header-inner">
+        <h1>Skolekantina</h1>
+        <nav aria-label="Hovedmeny">
+            <ul class="nav">
+                <li><a href="#hjem">Hjem</a></li>
+                <li><a href="#varer">Varer</a></li>
+                <li><a href="#om">Om oss</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#login">Logg inn</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main">
+
+<section id="hjem" class="section hero">
+    <h2>Velkommen til skolekantina</h2>
+    <p>
+        Vi tilbyr sunn, rimelig og bærekraftig mat for elever og ansatte.
+    </p>
+
+    <div class="nyheter">
+        <article class="nyhet nyhet--meat" aria-label="Kjøttdag i dag">
+            <span class="material-icons nyhet-icon" aria-hidden="true">restaurant</span>
+            <p><strong>Kjøttdag i dag</strong></p>
+        </article>
+
+        <article class="nyhet">
+            <span class="material-icons" aria-hidden="true">new_releases</span>
+            <p><strong>Nytt produkt tilgjengelig</strong></p>
+        </article>
+    </div>
+</section>
+
+<section id="varer" class="section">
+    <h2>Varer</h2>
+
+    <!-- Firebase: Varer hentes her senere -->
+    <div id="produkt-grid">
+
+
+    </div>
+</section>
+
+<section id="om" class="section section-muted">
+    <h2>Om oss</h2>
+
+    <p>
+        Skolekantina drives i samarbeid med skolen og har fokus på helse,
+        miljø og tilgjengelighet for alle.
+    </p>
+
+    <ul class="info-liste">
+        <li><strong>Åpningstider:</strong> 08:00 – 14:30</li>
+        <li><strong>Betaling:</strong> Vipps og kort</li>
+        <li><strong>Samarbeid:</strong> Skolens elevråd</li>
+    </ul>
+</section>
+
+<section id="kontakt" class="section">
+    <h2>Kontakt</h2>
+
+    <p><strong>Sted:</strong> Første etasje ved hovedinngangen</p>
+    <p><strong>E-post:</strong> kantine@skolen.no</p>
+    <p><strong>Kontaktperson:</strong> Kantineleder</p>
+</section>
+
+<section id="loginSec" class="section section-muted">
+    <h2>Logg inn (ansatte)</h2>
+
+    <!-- Kun design – Firebase senere -->
+    <form class="login-skjema">
+        <div class="felt">
+            <label for="epost">E-post</label>
+            <input type="email" id="epost" required>
+        </div>
+
+        <div class="felt">
+            <label for="passord">Passord</label>
+            <input type="password" id="passord" required>
+        </div>
+
+        <button type="button" id="login">Logg inn</button>
+    </form>
+</section>
+
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 Skolekantina</p>
+</footer>
+
+<script src="./index.js" type="module"></script>
+</body>
+</html>
